@@ -31,6 +31,10 @@ def check_all_messages(message):
 
     def response(bot_response, list_of_words, single_response, required_words=[]):
         nonlocal highest_prob_list
+        highest_prob_list][bot_response] = message_probability(message, list_of_words, single_response, required_words)
+
+# Response ------------------------------------------------
+
 
 def get_response(user_input):
     split_message = re.split(r'\s+|[,;?!.-]\s*', user_input.lower())
